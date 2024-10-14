@@ -1,8 +1,8 @@
 <script setup>
-import Subjects from './Subjects.vue';
-import Timer from './Timer.vue';
-import Chart from './Chart.vue';
-import Tasks from './Tasks.vue';
+import Subjects from '../components/Subjects.vue';
+import Timer from '../components/Timer.vue';
+import Chart from '../components/Chart.vue';
+import Tasks from '../components/Tasks.vue';
 </script>
 
 <template>
@@ -23,9 +23,10 @@ import Tasks from './Tasks.vue';
 </template>
 
 <style>
-body{
+body {
     background-color: lightgray;
 }
+
 .board {
     display: grid;
     width: 90vw;

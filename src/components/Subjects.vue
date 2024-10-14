@@ -1,7 +1,3 @@
-<!-- 
-    1. Figure out adding a task form -->
-
-
 <template>
     <div class="subjects-section">
         <h1 class="headline">Pay Attention!!!</h1>
@@ -25,7 +21,7 @@
                 <option value="2">Unproductive</option>
                 <option value="3">Good for the Soul</option>
             </select>
-            <input type="submit" value="Add"/>
+            <input type="submit" value="Add" />
 
         </form>
         <!-- Description: Div for all subjects after they created
@@ -128,6 +124,7 @@ export default {
                 this.$store.commit('CHANGE_SUBJECT', id);
                 let currentSubject = this.$store.state.subjects[id];
                 currentSubject.isActive = true;
+                console.log(currentSubject);
                 this.$store.commit('UPDATE_SUBJECT', currentSubject);
                 this.$store.commit('CHANGE_HIGHLIGHTED_SUBJECT', id);
                 this.$store.commit('UPDATE_TIMER');
